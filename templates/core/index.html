@@ -6,8 +6,8 @@
 {% block content %}
 <section class="section">
   <div class="container">
-    <h1 class="title has-text-centered">Recorded audios</h1>
-    {% for record in records %}
+    <!-- <h1 class="title has-text-centered">Recorded audios</h1> -->
+    <!-- {% for record in records %}
     <div class="level-item has-text-centered">
       <div>
         {% csrf_token %}
@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    {% endfor %}
+    {% endfor %} -->
   </div>
 </section>
 <section class="buttonList">
@@ -54,7 +54,7 @@
         class="button"
         type="submit"
         value="Picture Description"
-        onclick="addImage()"
+        onclick="location.href='{% url 'core:record' %}'"
       />
       <input class="button" type="submit" value="Join Alexa Project" />
     </div>

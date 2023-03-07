@@ -28,6 +28,9 @@
   <div class="container">
     <div class="columns">
       <div class="column is-offset-4 is-4">
+        
+        <img src="{% static 'assets/images/cookieS.png' %}" alt="Girl in a jacket">
+        
         <h1 class="title">Record audio</h1>
         <article class="message is-success" id="alert">
           <div class="message-header">
@@ -35,7 +38,7 @@
             <button class="delete" aria-label="delete"></button>
           </div>
           <div class="message-body">
-            You have successfully recorded your message. You can now click on
+            You have successfully recorded your answers. You can now put your username and click on
             the Submit button to post it.
           </div>
         </article>
@@ -46,9 +49,9 @@
               <input
                 class="input"
                 type="text"
-                placeholder="Language"
-                name="language"
-                id="language"
+                placeholder="Username"
+                name="Username"
+                id="Username"
               />
               <span class="icon is-left">
                 <i class="fas fa-language"></i>
@@ -73,6 +76,18 @@
   </div>
 </section>
 {% endblock content %}
+
+<!-- <script>
+  function addImage() {
+    var img = document.createElement("img"); // create a new image element
+    img.src = "static/assets/images/cookieS.png"; // set the source of the image
+    img.alt = "Image"; // set the alt attribute of the image
+    img.classList.add("image");
+    img.classList.add("is-centered");
+    var navb = document.querySelector(".title"); // find the element with class abc
+    navb.parentNode.insertBefore(img, navb); // insert the image before the element with class abc
+  }
+</script> -->
 
 <!--additional js-->
 {% block js %}
